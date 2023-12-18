@@ -1,0 +1,125 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+    /*===== Colores =====*/
+    /* --first-color: #F2A20C; */
+    --white-color: #E9EAEC;
+    --dark-color: blue;
+    --dark-color-lighten: #F2F5FF;
+    --text-color: #262626;
+    /*===== Fuente y tipografia =====*/
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+}
+
+/*===== BASE =====*/
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+
+.feature__img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*===== CARD =====*/
+
+.featured__card {
+    width: 300px;
+    height: 380px;
+    background-color: #FFB566;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    color: #E9EAEC;
+    overflow-y: hidden;
+    text-align: center;
+    margin: 1rem;
+    align-items: center;
+}
+
+.card__img {
+    position: absolute;
+    width: 240px;
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+    margin-left: -120px;
+}
+
+.card__data {
+    transform: translateY(13.2rem);
+    text-align: center;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    color: #262626;
+    margin-bottom: .5rem;
+}
+
+.card__price {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #262626;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.card__description {
+    font-size: .875rem;
+    color: #262626;
+    text-align: initial;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+}
+
+.card__button {
+    display: block;
+    width: max-content;
+    padding: 1.125rem 2rem;
+    background-color: #262626;
+    color: #E9EAEC;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: .2s;
+    opacity: 0;
+}
+
+.card__button:hover {
+    box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
+}
+
+.card__img,
+.card__data,
+.card__title,
+.card__price,
+.card__description {
+    transition: .5s;
+}
+
+/* Hover card effect */
+.featured__card:hover .card__img {
+    transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+}
+
+.featured__card:hover .card__data {
+    transform: translateY(4.8rem);
+}
+
+.featured__card:hover .card__title {
+    transform: translateX(-2.3rem);
+    margin-bottom: 0;
+}
+
+.featured__card:hover .card__preci {
+    transform: translateX(-6.8rem);
+}
+
+.featured__card:hover .card__description,
+.featured__card:hover .card__button {
+    transition-delay: .2s;
+    opacity: 1;
+}
