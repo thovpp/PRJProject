@@ -1,4 +1,4 @@
-Welcome to my Repository - MathUtil project
+Welcome to my Repository - PRJProject project
 
 
 You will find in this repo:
